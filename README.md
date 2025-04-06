@@ -104,3 +104,4 @@ sudo service mongod start
 
 sudo systemctl status mongod
 
+docker build ../../ -f Dockerfile -t sleeper_reservations
