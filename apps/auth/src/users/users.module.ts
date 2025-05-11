@@ -1,11 +1,12 @@
 import { Module } from '@nestjs/common';
 import { UsersController } from 'apps/auth/src/users/users.controller';
 import { UsersService } from './users.service';
-import { DatabaseModule, LoggerModule } from '@app/common';
 import {
+  DatabaseModule,
+  LoggerModule,
   UsersDocument,
   UsersSchema,
-} from 'apps/auth/src/users/models/user.schema';
+} from '@app/common';
 import { UserRepository } from 'apps/auth/src/users/users.repository';
 
 @Module({
